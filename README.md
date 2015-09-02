@@ -10,11 +10,15 @@ This is a fork of the official Ember load initializers. Added auto discover of e
 
 /* inside service/my-service.js */
 
-export default function() {
+export default Ember.Service.extend({
 
-    console.log("Hello from service");
+    sayHello: function() {
+    
+        console.log("Hello from service");
+    
+    }
 
-};
+});
 
 Initializer = {
   name: 'sayHello',
