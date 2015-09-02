@@ -20,7 +20,7 @@ define("ember/load-initializers",
           })
           .forEach(function(dep) {
             
-            console.log(matches);
+            console.log(dep.matches);
             
             var moduleName = dep.moduleName;
 
