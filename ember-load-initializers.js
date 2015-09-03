@@ -37,7 +37,11 @@ define("ember/load-initializers",
 			
 				initializer = module['default'];
 			
-			}
+			} else {
+                
+                return;
+                
+            }
 
             if (!initializer.name) {
               var initializerName = moduleName.match(/[^\/]+\/?$/)[0];
