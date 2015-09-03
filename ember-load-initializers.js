@@ -33,7 +33,7 @@ define("ember/load-initializers",
 				initializerType = "initializer";
 				initializer = module.Initializer;
 				
-			} else {
+			} else if (initializerType === "initializer") {
 			
 				initializer = module['default'];
 			
